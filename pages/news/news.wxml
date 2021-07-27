@@ -1,0 +1,25 @@
+<van-tabs active="{{ active }}">
+<!-- 校内新闻页面 -->
+  <van-tab title="校内新闻">
+    <navigator  url="/pages/newsdetail/newsdetail?id={{item._id}}" wx:for="{{newslist_1}}" wx:key = "index">
+      <van-divider />
+      <van-card
+  title-class="title"
+  thumb-class="pic"
+  thumb-mode="aspectFill"
+  title="{{item.s_name}}"
+  thumb="{{ item.s_pic }}"
+  desc="作者：{{item.s_author}} 时间：{{item.s_time}}"
+  desc-class="txt"
+/>
+
+    </navigator>
+    <foot></foot>
+  </van-tab>
+  <van-tab title="国内资讯">
+    <van-empty description="暂无新闻" />
+  </van-tab>
+  <van-tab title="国际速递">
+    <van-empty description="暂无新闻" />
+  </van-tab>
+</van-tabs>

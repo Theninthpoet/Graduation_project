@@ -1,0 +1,99 @@
+<head></head>
+<!-- 自定义组件头部标签 -->
+<!-- 头部标志 点击返回首页 客服咨询 -->
+<view class="banner">
+  <swiper indicator-dots="{{true}}" indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular="{{true}}" autoplay="{{true}}"  circular autoplay interval="2000">
+    <swiper-item>
+      <image src="/pages/images/banner1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/pages/images/banner2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/pages/images/banner3.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 轮播banner -->
+<scroll-view class="major" scroll-x="{{true}}">
+  <view class="majorCon">
+    <navigator class="box" url="/pages/activtelist/activtelist" open-type="reLaunch">
+      <image class="pic" src="/pages/images/报名1 (1).png"></image>
+      <view class="txt">活动报名</view>
+    </navigator>
+    <navigator class="box" url="/pages/news/news">
+      <image class="pic" src="/pages/images/新闻.png"></image>
+      <view class="txt">活动新闻</view>
+    </navigator>
+
+    <navigator class="box" url="/pages/myactivities/myactivities">
+      <image class="pic" src="/pages/images/报名1 (3).png"></image>
+      <view class="txt">我的活动</view>
+    </navigator>
+    <navigator class="box" url="/pages/aboutus/aboutus">
+      <image class="pic" src="/pages/images/报名1 (2).png"></image>
+      <view class="txt">关于我们</view>
+    </navigator>
+  </view>
+</scroll-view>
+<!-- 小按钮组件 -->
+<view class="works">
+  <view class="container">
+    <pubTitle myTitle = "近期活动" myUrl="/pages/activtelist/activtelist"></pubTitle>
+  <view class="wkMain">
+    <navigator class="box" wx:for="{{activitylist}}" wx:key="index" url="/pages/eventdetail/eventdetail?id={{item.id}}">
+      <image class="pic" src="{{item.r_img}}"></image>
+      <view class="ceng">
+        <view class="title"></view>
+      </view>
+    </navigator>
+<!-- 
+    <navigator class="box">
+      <image class="pic" src="/pages/images/activity2.jpg"></image>
+      <view class="ceng">
+        <view class="title"></view>
+      </view>
+    </navigator>
+
+    <navigator class="box">
+      <image class="pic" src="/pages/images/activity3.jpg"></image>
+      <view class="ceng">
+        <view class="title"></view>
+      </view>
+    </navigator>
+
+    <navigator class="box">
+      <image class="pic" src="/pages/images/activity4.jpg"></image>
+      <view class="ceng">
+        <view class="title"></view>
+      </view>
+    </navigator> -->
+  </view>
+  </view>
+</view>
+<!-- 近期活动模块 -->
+
+<view class="news">
+  <view class="container">
+    <pubTitle myTitle="活动新闻" myUrl="/pages/news/news">
+  </pubTitle>
+  <view class="newsMain">
+    <navigator class="newsItem" url="/pages/newsdetail/newsdetail?id={{item.id}}" wx:for="{{newslist}}"wx:key = "index">
+      <view class="pic">
+        <image src="{{item.s_pic}}"></image>
+      </view>
+      <view class="txt">
+        <view class="title">
+          {{item.s_name}}
+        </view>
+        <view class="info">
+          <text>作者：</text>{{item.s_author}}<text space="ensp"> - </text><text>时间：</text>{{item.s_time}}
+        </view>
+      </view>
+    </navigator>
+  </view>
+  </view>
+</view>
+<!-- 活动新闻模块 -->
+<foot></foot>
+<!-- 尾部标签自定义组件 -->

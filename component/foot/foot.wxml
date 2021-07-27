@@ -1,0 +1,5 @@
+
+<view class="footer">
+  <image class="pic" src="/pages/images/logo6.png" mode="widthFix"></image>
+  <view class="text">- 四川大学活动管理系统 -</view>
+</view>

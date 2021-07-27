@@ -1,0 +1,75 @@
+
+<!-- 活动图片 -->
+<view class="detailPic">
+  <image src="{{data.r_img}}"></image>
+</view>
+<!-- 报名模块 -->
+<view class="registration" >
+  <text>{{data.r_name}}志愿活动</text>
+  <!-- 横线部分 -->
+<view >
+  <text class='reason_txt'>报名截止</text>
+</view>
+<!-- 倒计时部分 -->
+<!--倒计时 -->
+<van-count-down use-slot time="{{ time }}" bind:change="onChange">
+  <text decode="{{true}}">剩余:&nbsp;</text>
+  <text class="item">{{ timeData.days }}</text>
+  <text decode="{{true}}">天 &nbsp;</text>
+  <text class="item">{{ timeData.hours }}</text>
+  <text decode="{{true}}">小时 &nbsp;</text>
+  <text class="item">{{ timeData.minutes }}</text>
+  <text decode="{{true}}">分钟 &nbsp;</text>
+  <text class="item">{{ timeData.seconds }}</text>
+  <text decode="{{true}}">秒 &nbsp;</text>
+</van-count-down>
+</view>
+  <!-- 点击后禁用，并将信息加入数据库 -->
+  <view wx:if="{{timeData.days!=0&&timeData.hours!=0&&timeData.minutes!=0&&timeData.seconds!=0}}">
+    <button class="btn" type="primary" bindtap="intothelist" disabled="{{disabled}}">点击报名</button>
+    <van-popup show="{{ show }}" round bind:close="onClose" custom-class="pop1">
+      <view class="pop">
+        <text>请扫码加入活动群聊</text>
+        <van-divider borderColor="#1989fa" />
+        <image src="/pages/images/活动群2.jpg" class="grouptalk"></image>
+      </view>
+      
+    </van-popup>
+  </view>
+  <view wx:else>
+    <button class="btn" type="default" disabled="{{true}}">报名结束</button>
+  </view>
+<!-- 活动详细信息部分 -->
+<view class="information">
+  <view class="num">
+    <image src="cloud://yxc-project-0gpprif4ff665fe3.7978-yxc-project-0gpprif4ff665fe3-1305341338/img/icon/个人.png"></image>
+    <text class="wenzi">参与人数：  {{data.r_number}}人（已报名{{data.r_alreadynum}}人）</text>
+  </view>
+  <view class="line"></view>
+  <view class="num">
+    <image src="cloud://yxc-project-0gpprif4ff665fe3.7978-yxc-project-0gpprif4ff665fe3-1305341338/img/icon/时钟 (1).png"></image>
+    <text class="wenzi">活动开始：  {{data.r_s_time}}</text>
+  </view>
+  <view class="line"></view>
+  <view class="num">
+    <image src="cloud://yxc-project-0gpprif4ff665fe3.7978-yxc-project-0gpprif4ff665fe3-1305341338/img/icon/时钟.png"></image>
+    <text class="wenzi">活动结束：  {{data.r_e_time}}</text>
+  </view>
+  <view class="line"></view>
+  <view class="num">
+    <image src="cloud://yxc-project-0gpprif4ff665fe3.7978-yxc-project-0gpprif4ff665fe3-1305341338/img/icon/地点.png"></image>
+    <text class="wenzi">活动地点：  {{data.r_address}}</text>
+  </view>
+  <view class="line"></view>
+  
+</view>
+<view class="img">
+  <image src="cloud://yxc-project-0gpprif4ff665fe3.7978-yxc-project-0gpprif4ff665fe3-1305341338/img/icon/四川大学江安校区.jpg"></image>
+</view>
+<view class="information_1">
+  <view class="num">
+    <image src="cloud://yxc-project-0gpprif4ff665fe3.7978-yxc-project-0gpprif4ff665fe3-1305341338/img/icon/线描－红旗.png"></image>
+    <text class="wenzi">主办方：  共青团四川大学委员会</text>
+</view>
+</view>
+<foot></foot>

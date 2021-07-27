@@ -1,0 +1,84 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/activtelist/activtelist",
+          "pathName": "pages/activtelist/activtelist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/homepage/homepage",
+          "pathName": "pages/homepage/homepage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/signUp/signUp",
+          "pathName": "pages/signUp/signUp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addactivitiy/addactivitiy",
+          "pathName": "pages/addactivitiy/addactivitiy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/eventdetail/eventdetail",
+          "pathName": "pages/eventdetail/eventdetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myactivities/myactivities",
+          "pathName": "pages/myactivities/myactivities",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/owninfo/owninfo",
+          "pathName": "pages/owninfo/owninfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/news/news",
+          "pathName": "pages/news/news",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/yxc/yxc",
+          "pathName": "pages/yxc/yxc",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personnellist/personnellist",
+          "pathName": "pages/personnellist/personnellist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/aboutus/aboutus",
+          "pathName": "pages/aboutus/aboutus",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

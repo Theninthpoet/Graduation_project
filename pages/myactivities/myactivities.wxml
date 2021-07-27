@@ -1,0 +1,26 @@
+<head></head>
+<view>
+  <text class="reason_txt">我的活动</text>
+</view>
+<block wx:for="{{activities}}" wx:key="_id">
+<view class="activity_list">
+  <view class="activity_list_1">
+    <!-- 选择框 -->
+    <!-- data-id把前端的数据往后端拿 -->
+    <checkbox-group bindchange="xuanze" data-id="{{item._id}}">
+      <checkbox value="{{item._id}}" checked="{{item.activity_checked}}">
+      </checkbox>
+    </checkbox-group>
+    <view class="activity_list_3">
+      <image src="{{item.activity_src}}"></image>
+      <view class="activity_list_2">
+        <view style="font-size:20px">{{item.activity_name}}</view>
+        <view >活动时间{{item.activity_time}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+</block>
+<view class="btn" bindtap="delete">
+  <button type="warn">退出该活动</button>
+</view>

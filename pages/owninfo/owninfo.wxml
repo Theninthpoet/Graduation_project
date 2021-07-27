@@ -1,0 +1,109 @@
+<head></head>
+<van-popup show="{{ show_tips }}" bind:close="onCloseTips" round
+position="bottom" custom-style="height: 57%" closeable
+>
+<view class="title">
+  <van-notice-bar
+  left-icon="volume-o"
+  text="请在填写个人信息前，仔细阅读本条提示"
+  custom-class="bar"
+/>
+<view class="txt">
+  <image src="cloud://yxc-project-0gpprif4ff665fe3.7978-yxc-project-0gpprif4ff665fe3-1305341338/img/icon/青志图标.png"></image>
+  <text class="txt1">欢迎使用高校活动管理系统</text>
+</view>
+<view class="content">
+  <text>1、个人信息请务必填写学生真实信息。</text>
+  <van-divider />
+  <text>2、请确认后再点击提交，若有误可点击重置。</text>
+  <van-divider />
+  <text>3、个人信息原则上只能填写一次，若需修改请联系管理员。</text>
+  <van-divider />
+  <text>4、自我介绍请填写个人相关活动经历</text>
+  <van-divider />
+  <van-divider
+  contentPosition="center"
+  customStyle="color: #1989fa; border-color: #1989fa; font-size: 15px;"
+>
+  最终解释权归四川大学青年志愿者协会所有
+</van-divider>
+</view>
+
+</view>
+</van-popup>
+<view class="info">
+<form  bindreset="delbtnre" bindsubmit="btnSub">
+  <van-cell-group >
+  <van-field
+    value="{{ value }}"
+    label="姓名"
+    placeholder="请输入您的姓名"
+    border="{{ false }}"
+    bind:change="onChange_n"
+    input-align="left"
+    size="large"
+    left-icon="manager-o" 
+    name="m_name"
+  />
+  <van-field
+    value="{{ value }}"
+    label="学号"
+    placeholder="请输入您的学号"
+    border="{{ false }}"
+    bind:change="onChange_s"
+    input-align="left"
+    size="large"
+    left-icon="label-o"
+    name="m_snumber"
+  />
+  <van-field
+    value="{{ value }}"
+    label="电话"
+    placeholder="请输入您的联系方式"
+    border="{{ false }}"
+    bind:change="onChange_p"
+    input-align="left"
+    size="large"
+    left-icon="phone-o"
+    name="m_phone"
+  />
+  <van-cell title="请选择您的所在学院" is-link size="large" 
+  bindtap="onTap" value="{{college}}" name="m_college" />
+<van-action-sheet
+  show="{{show}}"
+  actions="{{actions}}"
+  bind:close="onClose"
+  bind:select="onSelect"
+  name="m_time"
+/> 
+<!-- 日期选择器 -->
+<van-cell title="请选择入学时间" value="{{date}}"         bind:click="onDisplay" size="large" is-link arrow-direction="down" />
+
+<van-calendar show="{{cal_show}}" bind:close="OnClose" bind:confirm="onConfirm"   min-date="{{ minDate }}"
+  max-date="{{ maxDate }}"/>
+
+ <!-- 个人简介 -->
+<van-field
+    value="{{ value }}"
+    label="自我简介"
+    type="textarea"
+    placeholder="请输入自我简介"
+    autosize
+    border="{{ true }}"
+    bind:change="onChange_i"
+    size="large"
+    class="vant"
+    name="m_info"
+  />
+    <!-- btn布局 -->
+</van-cell-group>
+<view class="btn">
+  <button form-type="submit" type="primary" class="btn1" disabled="{{disabled}}">提交</button>
+  <button form-type="reset" class="btn2" disabled="{{disabled}}">重置</button>
+</view>
+</form>
+<!-- 弹出层 -->
+</view>
+
+
+

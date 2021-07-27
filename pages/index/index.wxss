@@ -1,0 +1,26 @@
+
+.banner{width: 100%;height: 295rpx;border: 1px solid bisque;}
+.banner swiper{height: 100%;width: 100%;}
+.banner image{width: 100%; height: 295rpx;}
+
+.majorCon{display: flex; padding: 20rpx 0;flex-wrap: nowrap;}
+.major .pic{width: 70rpx;height: 60rpx;}
+.major .txt{font-size: 26rpx;}
+.major .box{text-align: center;padding: 0 30rpx;width: 170rpx;}
+
+
+/* 最外层颜色 */
+.works{background-color: #f0f3f8; padding: 60rpx 0 40rpx  ;}
+.wkMain{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.wkMain .box{width: 340rpx;height: 300rpx;margin-bottom: 15rpx;}
+.wkMain .pic{height: 85%;width: 100%;}
+
+.news{padding: 90rpx 0 70rpx;}
+.newsItem{display: flex;padding: 15rpx 0;border: 1rpx dashed #f4f4f4;justify-content: space-between;}
+.newsItem .pic{width: 230rpx;height: 150rpx;}
+.newsItem .txt{width: 440rpx;display: flex;flex-direction: column;justify-content: space-between;}
+.newsItem .pic image{width: 100%;height: 100%;}
+.newsItem .title{font-size: 30rpx;}
+.newsItem .info{font-size: 26rpx;color: #888;}
+.newsItem .info text{font-size: 22rpx;}
+

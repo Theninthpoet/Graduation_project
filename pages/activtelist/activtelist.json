@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "title":"/component/title/title",
+    "foot":"/component/foot/foot",
+    "van-search": "@vant/weapp/search/index"
+  }
+}

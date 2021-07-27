@@ -1,0 +1,44 @@
+<title></title>
+<!-- 搜索框 -->
+<view class="search">
+  <input placeholder="请输入需要检索的活动" bindconfirm="search" confirm-type="search"></input>
+  <image src="cloud://yxc-project-0gpprif4ff665fe3.7978-yxc-project-0gpprif4ff665fe3-1305341338/img/icon/搜索.png" class="icon_search"></image>
+</view>
+<!-- 搜索列表 -->
+<view class="list"> 
+  <view class="listMain">
+    <navigator class="listItem" url="/pages/eventdetail/eventdetail?{{item._id}}" wx:for="{{search}}" wx:key = "index">
+      <view class="pic">
+        <image src="{{item.r_img}}"></image>
+      </view>
+      <view class="txt">
+        <view class="title">
+          {{item.r_name}}
+        </view>
+        <view class="info">
+          <text>地点：</text>{{item.r_address}}<text space="ensp"> - </text><text>时间：</text><text>{{item.r_s_time}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<!-- 活动列表 -->
+<view class="news"> 
+  <view class="newsMain">
+    <navigator class="newsItem" url="/pages/eventdetail/eventdetail?id={{item._id}}" wx:for="{{datalist}}" wx:key = "index">
+      <view class="pic">
+        <image src="{{item.r_img}}"></image>
+      </view>
+      <view class="txt">
+        <view class="title">
+          {{item.r_name}}
+        </view>
+        <view class="info">
+          <text>地点：</text>{{item.r_address}}<text space="ensp"> - </text><text>时间：</text><text>{{item.r_s_time}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<!-- 底部 -->
+<foot></foot>

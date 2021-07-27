@@ -1,0 +1,70 @@
+<head></head>
+<van-tabs active="{{ active }}" sticky tab-class="tabclass" ellipsis="false" line-height="5rpx">
+  <van-tab title="情满旅途" >
+    <view class="stuinfo">
+      <van-grid direction="horizontal" column-num="4" >
+      <van-grid-item icon="user-o" text="姓名" />
+      <van-grid-item icon="home-o" text="学院" />
+      <van-grid-item icon="phone-o" text="电话" />
+      <van-grid-item icon="cluster-o" text="年级" />
+      <view class="stuinfo1" wx:for="{{stuinfo}}" wx:key="index">
+        <van-row gutter="20"> 
+          <van-col span="5" offset="1">{{item.q_name}}</van-col>
+          <van-col span="6">{{item.q_college}}</van-col>
+          <van-col span="7">{{item.q_phone}}</van-col>
+          <van-col span="5">{{item.q_grade}}</van-col>
+        </van-row>
+        <van-divider hairline />
+      </view>
+      </van-grid>
+    </view>
+  </van-tab>
+  <van-tab title="筑美社区">
+    <view class="stuinfo">
+      <van-grid direction="horizontal" column-num="4" >
+      <van-grid-item icon="user-o" text="姓名" />
+      <van-grid-item icon="home-o" text="学院" />
+      <van-grid-item icon="phone-o" text="电话" />
+      <van-grid-item icon="cluster-o" text="年级" />
+      <view class="stuinfo1" wx:for="{{stuinfo2}}" wx:key="index">
+        <van-row gutter="20"> 
+          <van-col span="5" offset="1">{{item.z_name}}</van-col>
+          <van-col span="6">{{item.z_college}}</van-col>
+          <van-col span="7">{{item.z_phone}}</van-col>
+          <van-col span="5">{{item.z_grade}}</van-col>
+        </van-row>
+        <van-divider hairline />
+      </view>
+      </van-grid>
+    </view>  
+  </van-tab>
+  <van-tab title="乐动生活">
+    <view class="stuinfo">
+      <van-grid direction="horizontal" column-num="4" >
+      <van-grid-item icon="user-o" text="姓名" />
+      <van-grid-item icon="home-o" text="学院" />
+      <van-grid-item icon="phone-o" text="电话" />
+      <van-grid-item icon="cluster-o" text="年级" />
+      <view class="stuinfo1" wx:for="{{stuinfo3}}" wx:key="index">
+        <van-row gutter="20"> 
+          <van-col span="5" offset="1">{{item.r_name}}</van-col>
+          <van-col span="6">{{item.r_college}}</van-col>
+          <van-col span="7">{{item.r_phone}}</van-col>
+          <van-col span="5">{{item.r_grade}}</van-col>
+        </van-row>
+        <van-divider hairline />
+      </view>
+      </van-grid>
+    </view>  
+  </van-tab>
+  <van-tab title="绿动未来">
+    <van-empty image="search" description="暂无人报名" />
+  </van-tab>
+  <van-tab title="青暖夕阳">
+    <van-empty image="search" description="暂无人报名" />
+  </van-tab>
+  <van-tab title="五彩梦想">五彩梦想</van-tab>
+  <van-tab title="以文化人">以文化人</van-tab>
+  <van-tab title="寻美成都">寻美成都</van-tab>
+  <van-tab title="同心战疫">同心战疫</van-tab>
+</van-tabs>

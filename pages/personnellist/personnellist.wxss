@@ -1,0 +1,5 @@
+.stuinfo{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+}

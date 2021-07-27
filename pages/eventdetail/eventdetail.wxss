@@ -1,0 +1,169 @@
+page{background-color: rgb(237,237,237);}
+.detailPic image{
+  width: 100%;
+  height: 450rpx;
+} 
+/* 报名成功后qq群 */
+.pop1{
+  display: flex;
+  justify-content: center;
+  width: 500rpx;
+  height: 800rpx;
+}
+.pop{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pop text{
+  margin-top: 40rpx;
+  font-weight: 800;
+}
+.pop image{
+  margin-top: 60rpx;
+  width: 300rpx;
+  height: 500rpx;
+  justify-content: center;
+  margin-bottom: 80rpx;
+}
+/* 报名模块样式 */
+.registration{
+  padding: 20rpx 0 10rpx;
+  text-align: center;
+  background-color: white;
+}
+.registration text{
+  font-size: 35rpx;
+  font-weight: 545;
+  font-stretch: expanded;
+  color: rgb(73, 71, 71);
+}
+/* 文字横线样式 */
+.registration .reason_txt{
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  color: #333333;
+  display: table;
+  width: auto;
+  white-space: nowrap;
+  border-spacing: 0.5rem 0;
+  margin-left: 28rpx;
+  margin-right: 28rpx;
+  font-weight: 200;
+}
+ 
+.reason_txt::before,.reason_txt::after{
+  display: table-cell;
+  content: "";
+  width: 50%;
+  background: linear-gradient(#D8D8D8, #D8D8D8) repeat-x center;
+  background-size: 0.1rem 0.1rem;
+}
+/* 倒计时样式 */
+.tui-countdown-content{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: white;
+  margin-top: 15px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+.tui-conutdown-box{
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  line-height: 26px;
+  text-align: center;
+  background-color:white;
+  color: #fff;
+  margin: 0 5px;
+}
+.tui-countdown-bg{
+  background-color: #DF0101;
+}
+
+/* 信息模块 */
+.information{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: stretch;
+  margin-top: 40rpx;
+}
+.information .num{
+  height: 70rpx;
+}
+.information image{
+  width: 45rpx;
+  height: 45rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  align-content: center;
+}
+.line{
+  background-color: rgb(237,237,237);
+  width: 100%;
+  height: 5rpx;
+}
+.information .wenzi{
+  border-left-width: 200rpx;
+  margin-left: 20rpx;
+  color: rgb(102,102,102);
+}
+/* 地图样式 */
+.img{
+  display: flex;
+  justify-content: center;
+}
+.img image{
+  width: 80%;
+  height: 400rpx;
+}
+/* 地图后的主办方 */
+.information_1{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: stretch;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.information_1 .num{
+  height: 70rpx;
+}
+.information_1 image{
+  width: 45rpx;
+  height: 45rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  align-content: center;
+}
+/* 倒计时样式 */
+.registration .item {
+  margin-top:30rpx;
+  display: inline-block;
+  width: 25px;
+  margin-right: 5px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background-color: red;
+  border-radius: 2px;
+  margin-bottom: 30rpx;
+}
+.btn{
+  align-self:center;
+  margin-top: 40rpx;
+  width: 650rpx;
+  border-radius: 30rpx;
+}
+ 
+
+

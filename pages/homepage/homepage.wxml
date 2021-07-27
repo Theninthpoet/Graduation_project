@@ -1,0 +1,40 @@
+<view>
+  <image class="backgroundPic" mode='aspectFill' src='/pages/images/color2.jpg'> </image>
+  <view wx:if="{{hidden}}" class="menu1">
+    <view class="bind">
+      <image class="avatar1" mode='aspectFill' src='{{userInfo.avatarUrl}}'></image>
+      <view class="information">
+        <view class="nickname">{{userInfo.nickName}}</view>
+        
+      </view>
+    </view>
+  </view>
+
+  <view wx:else class="menu1">
+    <view class="bind">
+      <button type="default" class="signIn" open-type="getUserProfile" bindtap="getUserProfile">点击登陆</button>
+    </view>
+  </view>
+  <view class="menu">
+    <navigator url='/pages/aboutus/aboutus'>
+      <image class="icon" src='/pages/images/联系我们.png'></image>
+      关于我们
+      <image class="next" src='/pages/images/next.png'></image>
+    </navigator>
+  </view>
+
+  <view class="menu">
+    <navigator url='/pages/myactivities/myactivities'>
+      <image class="icon" src='/pages/images/个人主页.png'></image>
+      我的活动
+      <image class="next" src='/pages/images/next.png'></image>
+    </navigator>
+  </view>
+  <view class="menu">
+    <navigator url='/pages/personnellist/personnellist'>
+      <image class="icon" src='/pages/images/个人主页 (1).png'></image>
+      活动名单
+      <image class="next" src='/pages/images/next.png'></image>
+    </navigator>
+  </view>
+</view>

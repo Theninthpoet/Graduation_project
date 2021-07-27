@@ -1,0 +1,19 @@
+<!-- 新闻图片 -->
+<view class="detailPic">
+  <image src="{{data.s_pic}}"></image>
+</view>
+<!-- 标题和作者 -->
+<view class="registration" >
+  <text>{{data.s_name}}</text>
+</view >
+<van-divider contentPosition="center">作者：{{data.s_author}}  - 时间:{{data.s_time}}</van-divider>
+<!-- 具体内容 -->
+<view class="content">
+  <view>
+    <text class="txt" user-select="{{true}}" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{data.s_content[0]}}</text>
+  </view>
+  <view>
+    <text class="txt" user-select="{{true}}" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{data.s_content[1]}}</text>
+  </view>
+</view>
+<foot></foot>

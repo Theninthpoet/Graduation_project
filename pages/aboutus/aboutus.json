@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "head":"/component/title/title",
+    "foot":"/component/foot/foot"
+  }
+}

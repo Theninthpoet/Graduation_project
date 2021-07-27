@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/owninfo/owninfo",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/activtelist/activtelist",
+    "pages/homepage/homepage",
+    "pages/news/news",
+    "pages/eventdetail/eventdetail",
+    "pages/myactivities/myactivities",
+    "pages/newsdetail/newsdetail",
+    "pages/personnellist/personnellist",
+    "pages/aboutus/aboutus"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "高校活动管理",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/images/home1.png",
+        "selectedIconPath": "/pages/images/home2 .png"
+      },
+      {
+        "pagePath": "pages/activtelist/activtelist",
+        "text": "活动列表",
+        "iconPath": "/pages/images/home3.png",
+        "selectedIconPath": "/pages/images/home4.png"
+      },
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "个人中心",
+        "iconPath": "pages/images/个人主页 (1).png",
+        "selectedIconPath": "pages/images/个人主页.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+  
+}

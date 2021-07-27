@@ -1,0 +1,4 @@
+.pubTitle{display:flex;justify-content: space-between;height: 60rpx;margin-bottom: 40rpx;}
+.pubTitle .txt{font-size: 35rpx;height: 100%; position: relative;padding-left: 20rpx;}
+.pubTitle .txt::before{display: block; width: 8rpx;height: 34rpx;background-color:red;content: " ";position: absolute;left: 0%;top: 50%;margin-top: -20rpx;}
+.pubTitle .more{font-size: 32rpx;color: #666;} 

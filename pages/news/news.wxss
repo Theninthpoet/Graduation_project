@@ -1,0 +1,12 @@
+.title{
+  font-size:30rpx;
+  margin-top:30rpx
+}
+.pic{
+  width: 100rpx;
+  height: 60rpx;
+}
+.txt{
+  margin-top:30rpx;
+  font-size:30rpx;
+}
